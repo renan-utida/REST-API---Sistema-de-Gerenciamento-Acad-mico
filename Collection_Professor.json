@@ -1,0 +1,123 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2025-02-04T00:00:00.000Z",
+  "__export_source": "insomnia.desktop.app:v2023.5.8",
+  "resources": [
+    {
+      "_id": "wrk_professores",
+      "_type": "workspace",
+      "name": "Professores",
+      "description": "API REST - CRUD de Professores",
+      "scope": "collection"
+    },
+    {
+      "_id": "req_listar_professores",
+      "_type": "request",
+      "parentId": "wrk_professores",
+      "name": "Listar",
+      "description": "Lista todos os professores",
+      "url": "http://localhost:8080/api/professores",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ]
+    },
+    {
+      "_id": "req_buscar_professor",
+      "_type": "request",
+      "parentId": "wrk_professores",
+      "name": "Buscar",
+      "description": "Busca um professor por ID",
+      "url": "http://localhost:8080/api/professores/1",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ]
+    },
+    {
+      "_id": "req_adicionar_professor",
+      "_type": "request",
+      "parentId": "wrk_professores",
+      "name": "Adicionar",
+      "description": "Adiciona um novo professor",
+      "url": "http://localhost:8080/api/professores",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"Roberto Lima\",\n  \"departamento\": \"Redes de Computadores\",\n  \"email\": \"roberto.lima@fiap.com.br\",\n  \"titulacao\": \"Doutor\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ]
+    },
+    {
+      "_id": "req_atualizar_professor",
+      "_type": "request",
+      "parentId": "wrk_professores",
+      "name": "Atualizar",
+      "description": "Atualiza um professor existente",
+      "url": "http://localhost:8080/api/professores/1",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"Ana Carolina Silva\",\n  \"departamento\": \"Engenharia de Software\",\n  \"email\": \"ana.silva@fiap.com.br\",\n  \"titulacao\": \"Pós-Doutora\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ]
+    },
+    {
+      "_id": "req_deletar_professor",
+      "_type": "request",
+      "parentId": "wrk_professores",
+      "name": "Deletar",
+      "description": "Remove um professor",
+      "url": "http://localhost:8080/api/professores/1",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ]
+    },
+    {
+      "_id": "env_base",
+      "_type": "environment",
+      "parentId": "wrk_professores",
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false
+    },
+    {
+      "_id": "jar_cookies",
+      "_type": "cookie_jar",
+      "parentId": "wrk_professores",
+      "name": "Default Jar",
+      "cookies": []
+    }
+  ]
+}

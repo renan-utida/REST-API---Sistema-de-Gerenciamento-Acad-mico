@@ -1,0 +1,150 @@
+type: collection.insomnia.rest/5.0
+name: Professores
+meta:
+  id: wrk_aaebf43d1cf641dd8fb6e5539978466c
+  created: 1759623530013
+  modified: 1759623530013
+  description: ""
+collection:
+  - url: http://localhost:8080/api/professores
+    name: Listar
+    meta:
+      id: req_3126b6c05b314d40b39dd6bf6fa47508
+      created: 1759624600315
+      modified: 1759625562896
+      isPrivate: false
+      description: ""
+      sortKey: -1759624600315
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.6.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/professores/1
+    name: Buscar
+    meta:
+      id: req_1432906f6571457c8e29a3444b9ea37f
+      created: 1759624720924
+      modified: 1759625567104
+      isPrivate: false
+      description: ""
+      sortKey: -1759624720924
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.6.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/professores
+    name: Adicionar
+    meta:
+      id: req_9fe48970a92b47258673c12a73137dfa
+      created: 1759624764103
+      modified: 1759625617570
+      isPrivate: false
+      description: ""
+      sortKey: -1759624764103
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "nome": "Roberto Lima",
+          "departamento": "Redes de Computadores",
+          "email": "roberto.lima@fiap.com.br",
+          "titulacao": null
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.6.1
+        id: pair_6a0c7f316ecd4701aa68821ab5da25fc
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/professores/1
+    name: Atualizar
+    meta:
+      id: req_efda98b019e143f7a988a82998250817
+      created: 1759625003435
+      modified: 1759625577395
+      isPrivate: false
+      description: ""
+      sortKey: -1759625003435
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "nome": "Ana Carolina Silva",
+          "departamento": "Engenharia de Software",
+          "email": "ana.silva@fiap.com.br",
+          "titulacao": "Pós-Doutora"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.6.1
+        id: pair_70438631ca9f4ecfab8b0cf5c07d1265
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/professores/2
+    name: Deletar
+    meta:
+      id: req_8e23b43e1abf458f8d56f774f150ed53
+      created: 1759625191238
+      modified: 1759625586094
+      isPrivate: false
+      description: ""
+      sortKey: -1759625191238
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/11.6.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_b66a5cef57c91486a14c84cf1bce81c062082dfe
+    created: 1759623530036
+    modified: 1759623530036
+environments:
+  name: Base Environment
+  meta:
+    id: env_b66a5cef57c91486a14c84cf1bce81c062082dfe
+    created: 1759623530030
+    modified: 1759623530030
+    isPrivate: false
