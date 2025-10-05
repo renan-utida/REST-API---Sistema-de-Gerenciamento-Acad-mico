@@ -456,6 +456,8 @@ Projeto desenvolvido como atividade acadêmica - FIAP
 
 ### Linkedin: https://www.linkedin.com/in/renan-dias-utida-1b1228225/
 
+**Link Repositorio:** https://github.com/renan-utida/REST-API---Sistema-de-Gerenciamento-Academico
+
 ### Orientado pelo Professor Salatiel Marinho
 
 ---
