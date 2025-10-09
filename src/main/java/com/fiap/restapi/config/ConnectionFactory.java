@@ -9,9 +9,9 @@ public class ConnectionFactory {
     private static final String URL =
             System.getenv().getOrDefault("ORACLE_URL","jdbc:oracle:thin:@oracle.fiap.com.br:1521:orcl");
     private static final String USER =
-            System.getenv().getOrDefault("ORACLE_USER", "RM558540");
+            System.getenv().getOrDefault("ORACLE_USER", "usuario");
     private static final String PASS =
-            System.getenv().getOrDefault("ORACLE_PASSWORD","160203");
+            System.getenv().getOrDefault("ORACLE_PASSWORD","senha");
 
     public static Connection getConnection() {
         try{
